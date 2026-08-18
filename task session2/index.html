@@ -1,1 +1,142 @@
-
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Form</title>
+    </head>
+    <body>
+        <form action="" method="post" autocomplete="off" >
+            <div>
+              <label>First Name:</label>
+              <input type="text" name="firstName" placeholder="enter your first Name">
+            </div>
+            <br>
+            <div>
+                <label>Last Name:</label>
+            <input type="text" name="lastName" required>
+            </div>
+            <br>
+            <div>
+              <label>Email</label>
+              <input type="email" name="mail" autofocus>
+            </div>
+            <br>
+            <div>
+               <label for="">Shipping Area</label>
+               <input type="text" name="area" value="Alex" disabled>
+               <input type="text" name="area" value="Alex" readonly>
+            </div>
+            <br>     
+            <div>
+                <input type="password" placeholder="enter your password" name="text">
+            </div>
+            <br>
+            <div>
+                <label for="">Gender</label>
+                <input id="m" type="radio" name="gender"  value="0"><label for="m">Male</label>
+                <input id="k" type="radio" name="gender"  value="1"><label for="k">Female</label>
+            </div>
+            <br>
+            <div>
+                <label >Courses</label>
+                <input id="a" type="checkbox" name="course" value="0"><label for="a">Html</label>
+                <input id="b" type="checkbox" name="course" value="1"><label for="b">CSS</label>
+                <input id="c" type="checkbox" name="course" value="2"><label for="c">Js</label>
+                <input id="d" type="checkbox" name="course" value="3"><label for="d">Bootstrap</label>
+            </div>
+            <br>
+            <div>
+                <label>Age</label>
+                <input type="number" name="age" min="1" max="80" >
+            </div>
+            <br>
+            <div>
+                <select  name="track">
+                    <option value="t" disabled selected>please choose your track</option>
+                    <option value="t1">frontend</option>
+                    <option value="t2">backend</option>
+                    <option value="t3">network</option>
+                    <option value="t4">mobile</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label for="bb">add image</label>
+                <input id="bb" type="file" accept="image/png" multiple name="add">
+            </div>
+            <br>
+            <div>
+                <input type="text" pattern="[A-Za-z]" title="enter only letters">
+                <input type="text" pattern="[0-9]+" title="enter only numbers">
+            </div>
+            <br>
+            <div>
+                <label for="web1">homepage</label>
+                <input type="url" id="web1" name="website" pattern="https?://.+" title="include http://">
+            </div>
+            <br>
+            <div>
+              <label>date</label>
+              <input type="date" name="date">
+              <label>date/time</label>
+              <input type="datetime-local" name="date/time">
+              <label>month</label>
+              <input type="month" name="month">
+            </div>
+            <br>
+            <div>
+                <label>color</label>
+                <input type="color" name="color">
+            </div>
+            <br>
+            <div>
+                <label>Range</label>
+                <input type="range" name="range" min="0" max="100" step="5" value="80">
+            </div>
+            <br>
+            <div>
+                <label for="dd">ID</label>
+                <input id="dd" type="text" minlength="7" maxlength="15" name="id">
+            </div>
+            <br>
+            <div>
+               <label>Mobile :</label>
+               <input name="mob"type="tel" pattern="01(0|1|2|5)[0-9]{8}" maxlength="11">
+            </div>
+            <br>
+            <div>
+                <textarea name="comment" cols="10" rows="5" placeholder="enter your comment"></textarea>
+            </div>
+            <br>
+            <div> 
+                <label>web</label>
+                <input type="search" list="search" placeholder="search here">
+                  <datalist id="search1">
+                    <option value="hTML">
+                    <option value="cSS">
+                    <option value="Js">
+                    <option value="frontend">
+                  </datalist >     
+            </div>
+            <br>
+            <div>
+              <fieldset>
+                 <legend>Search</legend>
+                 <input type="search2" list="search">
+                 <datalist id="search">
+                   <option value="HTML">
+                   <option value="python">
+                   <option value="JavaScript">
+                   <option value="c#">
+                 </datalist>
+             </fieldset>
+            </div>
+            <br>
+            <div>
+                <input type="submit" value="Login">
+                <input type="submit" value="Register">
+                <input type="reset" value="clear data">
+                <input type="reset" value="clear data">
+            </div>
+        </form>
+    </body>
+</html>
