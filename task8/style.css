@@ -1,0 +1,147 @@
+body {
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.interactive-card {
+    position: relative;
+    background-color: #e2e8f0;
+    color: #1e293b;
+    padding: 30px;
+    border-radius: 12px;
+    width: 350px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+
+.card-content h3 {
+    margin-top: 0;
+    font-size: 24px;
+}
+
+.card-content p {
+    font-size: 16px;
+    color: #475569;
+    transition: color 0.3s ease;
+}
+
+
+.arrow-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    background-color: #0f766e;
+    border-bottom-left-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.arrow-container::before {
+    content: "←";
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+.interactive-card:hover {
+    background-color: #0f766e; 
+    color: #ffffff; 
+}
+
+.interactive-card:hover .card-content p {
+    color: #f1f5f9;
+}
+
+.interactive-card:hover .arrow-container {
+    background-color: transparent;
+}
+
+.interactive-card:hover .arrow-container::before {
+    content: "→"; 
+    font-size: 18px;
+}
+
+.interactive-card.option-4 {
+    background-color: #ffffff;
+    border: 1px solid #d1d5db;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 480px;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+}
+
+.interactive-card.option-4 .card-content {
+    padding: 30px;
+    position: relative;
+    z-index: 2;
+}
+
+.interactive-card.option-4 .top-icon {
+    color: #374151;
+    margin-bottom: 16px;
+    
+}
+
+.interactive-card.option-4 h3 {
+    color: #111827;
+    margin-top: 0;
+    margin-bottom: 8px;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.interactive-card.option-4 p {
+    color: #4b5563;
+    line-height: 1.5;
+    margin: 0;
+    font-size: 15px;
+}
+
+
+.interactive-card.option-4 .side-strip {
+    position: absolute;
+    top: 0;
+    right: -50px; 
+    width: 65px;
+    height: 100%;
+    background-color: #831843; 
+    border-top-left-radius: 100% 50%;
+    border-bottom-left-radius: 100% 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 15px;
+    opacity: 0;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 3;
+}
+
+
+.interactive-card.option-4 .arrow-icon-side {
+    width: 7px;
+    height: 7px;
+    border-top: 2px solid #ffffff;
+    border-right: 2px solid #ffffff;
+    transform: rotate(45deg);
+}
+
+
+.interactive-card.option-4:hover .side-strip {
+    right: 0; 
+    opacity: 1;
+}
