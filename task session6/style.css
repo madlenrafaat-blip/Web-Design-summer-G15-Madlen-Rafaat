@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.main-wrapper {
+    width: 80%;
+    margin: auto;
+    padding: 2%;
+}
+
+.flex-row {
+    display: flex;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.self-centered {
+    align-self: center;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.width-half {
+    width: 50%;
+}
+
+.box-45 {
+    width: 45%;
+}
+
+.box-70 {
+    width: 70%;
+}
+
+.relative-pos {
+    position: relative;
+}
+
+.absolute-pos {
+    position: absolute;
+}
+
+.display-block {
+    display: block;
+}
+
+.auto-margin {
+    margin: auto;
+}
+
+.bottom-space {
+    margin-bottom: 5%;
+}
+
+.final-section-margin {
+    margin-bottom: 15%;
+}
+
+.right-margin {
+    margin-right: 3%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.main-heading {
+    font-size: 62px;
+}
+
+.sub-text {
+    margin: 1%;
+    text-align: center;
+}
+
+.main-wrapper button {
+    border: none;
+    border-radius: 15px;
+    color: white;
+    background-color: #285E67;
+    padding: 1% 4%;
+    margin: 2% auto;
+    font-size: 15px;
+}
+
+.gallery-row img {
+    margin-bottom: 5%;
+}
+
+.light-card {
+    background-color: #F4F4F4;
+    border-radius: 15px;
+    height: 464px;
+}
+
+.reveal-box {
+    background-color: yellowgreen;
+}
+
+.section-title-alt {
+    font-size: 49px;
+    margin-bottom: 10%;
+}
+
+.floating-img {
+    bottom: 0px;
+    right: 105px;
+}
+
+.inner-content {
+    padding: 2%;
+}
+
+.custom-icon {
+    display: inline-block;
+    color: white;
+    background-color: #285E67;
+    padding: 3%;
+    padding-left: 5%;
+    padding-right: 10%;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.box-45 img {
+    width: 100%;
+}
+
+.desc-spacing {
+    margin-bottom: 4%;
+}
+
+.badge-icon {
+    color: #285E67;
+    width: 20%;
+    height: 20px;
+    border: 3px solid #285E67;
+    border-radius: 100px;
+    margin-right: 10px;
+}
+
+.bg-banner {
+    background-image: url('https://images.unsplash.com/photo-1448375240586-882707db888b?w=1200');
+    background-size: cover;
+    background-position: center;
+    height: 450px;
+    border-radius: 15px;
+}
+
+.site-footer {
+    color: white;
+    background-color: #285E67;
+}
+
+.site-footer i {
+    color: white;
+}
+
+.center-content-box {
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.center-content-box i {
+    border-color: white;
+    color: white;
+    font-size: 30px;
+}
+
+.center-content-box button {
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+    margin-bottom: 10%;
+}
+
+.floating-card {
+    width: 600px;
+    height: 250px;
+    background-color: #FCE2D7;
+    border-radius: 15px;
+    bottom: -125px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: black;
+}
+
+.floating-card .main-wrapper {
+    height: 100%;
+}
+
+.floating-card .main-wrapper i {
+    color: black;
+    border-color: black;
+}
