@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+}
+
+.hero-bg {
+    background: linear-gradient(rgba(13, 27, 42, 0.9), rgba(13, 27, 42, 0.8)), 
+                url('https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&w=1400&q=80');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    color: #ffffff;
+}
+
+.hero-content {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.product-img {
+    height: 250px;
+    object-fit: cover;
+    width: 100%;
+}
+
+
+.team-img {
+    height: 280px;
+    object-fit: cover;
+    width: 100%;
+}
+
+
+.footer-dark {
+    background-color: #0d1b2a;
+}
+
+
+.footer-link {
+    color: #adb5bd;
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    color: #ffffff;
+}
+
+.newsletter-form {
+    display: flex;
+    gap: 12px;
+}
+
+.newsletter-form .form-control {
+    border-radius: 6px !important;
+}
+
+.newsletter-form .btn {
+    border-radius: 6px !important;
+    white-space: nowrap;
+}
