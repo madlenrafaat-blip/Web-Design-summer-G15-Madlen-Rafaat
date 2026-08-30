@@ -20,3 +20,31 @@ else if( degree >= 70 && degree < 80){
 else if ( degree < 70) {
     alert("failed");
 }
+
+
+
+
+
+// task part 2
+
+
+function looping(startNum,endNum,breakNum,contNum){
+    if (startNum==undefined || endNum==undefined || breakNum==undefined || contNum==undefined){
+        alert('Enter all numbers')
+        
+        return;}
+    for(var i=startNum; i<=endNum ; i++){
+        if(i==contNum){
+            
+            continue;
+            console.log(i)
+        }
+        if(i==breakNum){
+            break;
+            console.log(i)
+        }
+        console.log(i);
+    }
+    return i;
+}
+looping(1,10,9,3);
