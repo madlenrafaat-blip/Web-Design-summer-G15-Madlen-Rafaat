@@ -24,7 +24,6 @@ else if ( degree < 70) {
 
 
 
-
 // task part 2
 
 
@@ -48,3 +47,20 @@ function looping(startNum,endNum,breakNum,contNum){
     return i;
 }
 looping(1,10,9,3);
+
+
+
+// task part 3
+
+var courses = ["html", "css", "js"];
+
+var newcourse = prompt("Enter a new course:");
+
+if (newcourse === "") {
+    alert("You must enter a course");
+} else if (courses.includes(newcourse)) {
+    alert("course already exists");
+} else {
+    courses.push(newcourse);
+    console.log(courses);
+}
