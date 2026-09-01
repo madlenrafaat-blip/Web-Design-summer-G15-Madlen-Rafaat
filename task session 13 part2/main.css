@@ -1,0 +1,13 @@
+var changeBtn = document.getElementById('btnChange')
+var imageEl = document.getElementById('myImage')
+
+var img1 = "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=500"
+var img2 = "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=500"
+
+changeBtn.onclick = function() {
+    if (imageEl.src == img1) {
+        imageEl.src = img2
+    } else {
+        imageEl.src = img1
+    }
+}
